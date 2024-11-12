@@ -1,6 +1,8 @@
 import { fastify } from "fastify";
 import FlightsRoute from "./Routes/FlightsRoute.js";
+import { configDotenv } from "dotenv";
 
+configDotenv()
 const app = fastify({
     logger: true
 }) 
